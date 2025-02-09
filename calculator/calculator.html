@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="/calculator/calculator.css">
+    <title>Document</title>
+
+</head>
+<body>
+   
+    <video autoplay muted loop class="video-bg">
+        <source src="/numbers moving background.mp4" type="video/mp4">
+    
+    </video>
+ 
+    <div class="tablecover">
+      
+    <table border="18px solid yellow" cellspacing="16px" cellpadding="15px">
+        <tr>
+           
+            <td colspan="4" class="btn display" tabindex="0"> </td>
+         
+        </tr>
+        <tr>
+            <td class="btnm" onclick="fs()">ON</td>
+            <td class="btnm" onclick="del()"> C</td>
+            <td class="btnm" onclick="clr()">AC</td>
+            <td class="btnd" onclick="dis('%')">%</td>
+        </tr>
+        <tr>
+            <td class="btn" onclick="dis('7')">7</td>
+            <td class="btn" onclick="dis('8')">8</td>
+            <td class="btn" onclick="dis('9')">9</td>
+            <td class="btnd" onclick="dis('*')">x</td>
+        </tr>
+        <tr>
+            <td class="btn" onclick="dis('4')">4</td>
+            <td class="btn" onclick="dis('5')">5</td>
+            <td class="btn" onclick="dis('6')">6</td>
+            <td class="btnd" onclick="dis('-')">-</td>
+        </tr>
+        <tr>
+            <td class="btn" onclick="dis('1')">1</td>
+            <td class="btn" onclick="dis('2')">2</td>
+            <td class="btn" onclick="dis('3')">3</td>
+           <!-- <td class="btn peach" onclick="dis('+')">+</td> -->
+           <td rowspan="2" class="btnd" onclick="dis('+')">+</td>
+
+        </tr>
+        <tr>
+            <td class="btn" onclick="dis('0')">0</td>
+            <td class="btn" onclick="dis('.')">.</td>
+            
+           <td colspan="1" class="btnd" onclick="res()">=</td>
+        </tr>
+    </table>
+</div>
+    <script src="./calculator.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+/* / body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    background-image: url(/calculator/image/istockphoto-1491179952-612x612.jpg);
+    background-size: cover;
+    
+} */
+/* .btn{
+    border: 3px solid rgba(9, 9, 9, 0.182);
+    border-radius: 10px;
+}
+table{
+border-color: rgb(252, 240, 11);
+background-color: rgb(242, 248, 127);
+border-radius: 50px;
+}
+.btnm{
+    background-color: rgb(233, 126, 162);
+    border-radius: 5px;
+    color: white;
+} */
+.video-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Overlay for better visibility */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: -1;
+}
+
+
+ /* General Styles */
+ body {
+    background-color: #fceaff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(/calculator/image/polygonal-background_53876-43469.jpg);
+    background-size: contain;
+}
+.tablecover {
+    position: relative;
+    padding: 20px;
+    background: #5e5cf7;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+
+.tablecover::before {
+    left: 10px;
+}
+
+.tablecover::after {
+    right: 10px;
+}
+
+/* Table Styling */
+table {
+    background: #9c9de7;
+    border-radius: 15px;
+    border-color: rgb(10, 29, 137);
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.btn {
+    background: #529fdf;
+    color: #fdfdfd;
+    font-size: 20px;
+    border: none;
+    padding: 15px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0b0558;
+}
+
+.btnm {
+    background: #f776e6;
+    color: #fcfbfc;
+    font-size: 18px;
+    border-radius: 12px;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btnd {
+    background: #0f169f;
+    color: #fffbfe;
+    font-size: 18px;
+    border-radius: 12px;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btnm:hover {
+    background: #80f4e5;
+}
+
+
+.display {
+    background: #b3d1fa;
+    height: 50px;
+    text-align: right;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.1);
+} 
+.display:hover{
+    background: #529fdf;
+}
