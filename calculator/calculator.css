@@ -1,26 +1,4 @@
-/* / body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 70px;
-    background-image: url(/calculator/image/istockphoto-1491179952-612x612.jpg);
-    background-size: cover;
-    
-} */
-/* .btn{
-    border: 3px solid rgba(9, 9, 9, 0.182);
-    border-radius: 10px;
-}
-table{
-border-color: rgb(252, 240, 11);
-background-color: rgb(242, 248, 127);
-border-radius: 50px;
-}
-.btnm{
-    background-color: rgb(233, 126, 162);
-    border-radius: 5px;
-    color: white;
-} */
+
 .video-bg {
     position: fixed;
     top: 0;
@@ -42,7 +20,6 @@ border-radius: 50px;
     z-index: -1;
 }
 
-
  /* General Styles */
  body {
     background-color: #fceaff;
@@ -57,8 +34,8 @@ border-radius: 50px;
 .tablecover {
     position: relative;
     padding: 20px;
-    background: #5e5cf7;
-    border-radius: 20px;
+    background: #bc2d55;
+    border-radius: 80px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     overflow: hidden;
 }
@@ -75,8 +52,8 @@ border-radius: 50px;
 /* Table Styling */
 table {
     background: #9c9de7;
-    border-radius: 15px;
-    border-color: rgb(10, 29, 137);
+    border-radius: 55px;
+    border-color: rgb(252, 40, 89);
     align-items: center;
     justify-content: center;
     padding: 10px;
@@ -87,6 +64,8 @@ table {
     color: #fdfdfd;
     font-size: 20px;
     border: none;
+    animation: glow 1.5s infinite alternate;
+
     padding: 15px;
     border-radius: 12px;
     cursor: pointer;
@@ -98,28 +77,33 @@ table {
 }
 
 .btnm {
-    background: #f776e6;
+    background: #f48092;
     color: #fcfbfc;
     font-size: 18px;
     border-radius: 12px;
     border: none;
     padding: 15px;
+    animation: glow 1.5s infinite alternate;
+
     cursor: pointer;
     transition: 0.3s;
 }
 .btnd {
-    background: #0f169f;
+    background: #f9b061;
     color: #fffbfe;
     font-size: 18px;
     border-radius: 12px;
     border: none;
     padding: 15px;
-    cursor: pointer;
+    animation: glow 1.5s infinite alternate;
+cursor: pointer;
     transition: 0.3s;
 }
-
+.btnd:hover {
+    background: #ff8502;
+}
 .btnm:hover {
-    background: #80f4e5;
+    background: #ef2e4b;
 }
 
 
@@ -135,3 +119,10 @@ table {
 .display:hover{
     background: #529fdf;
 }
+@keyframes glow {
+    0% { box-shadow: 0 0 10px purple }
+    50% { box-shadow: 0 0 20px yellow, 0 0 40px rgb(255, 247, 0); }
+    100% { box-shadow: 0 0 10px blue}
+}
+
+  
